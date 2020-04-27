@@ -87,8 +87,19 @@ Not SATD
 bye!
 ```
 
+### Test and play using a comment file
+You can also use SATD Detector to test all comments saved in a text file (separated by `newline`).
+
+SATD Detector will read, analyse and write the results in a new text file containing only the results,
+as "SATD" or "not", in the exact same path previously provided + ".result".
+```bash
+$ java -jar satd_detector.jar test -comment_file /path/to/comment-file.txt
+bye!
+```
+Results text file: `/path/to/comment-file.txt.result`
+
 ## Java API
-Your can also use SATD Detector in your Java projects. 
+You can also use SATD Detector in your Java projects. 
 
 - Download satd_detector.jar
 - Add it to the classpath
